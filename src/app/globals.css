@@ -13,6 +13,10 @@
     font-family: var(--font-jetbrains-mono);
   }
 
+  .no-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+
   .h1 {
     @apply text-[40px] xl:text-[80px] leading-[1.1] font-semibold;
   }
