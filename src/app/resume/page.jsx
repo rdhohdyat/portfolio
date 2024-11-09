@@ -1,9 +1,6 @@
-import React from 'react'
 
 const Resume = () => {
-  return (
-    <div>Resume</div>
-  )
+  return <section className="container mx-auto pt-16">Resume</section>;
 }
 
 export default Resume

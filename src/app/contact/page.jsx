@@ -1,8 +1,6 @@
-import React from 'react'
-
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <section className='container mx-auto pt-16'>Contact</section>
   )
 }
 

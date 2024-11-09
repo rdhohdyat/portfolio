@@ -1,8 +1,11 @@
+import { FiDownload } from "react-icons/fi";
+
 import { Button } from "@/components/ui/button";
 import Photo from "@/components/Photo";
-
-import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
+import About from "./home/About";
+import Skill from "./home/Skill";
+import Project from "./home/Project";
 
 export default function Home() {
   return (
@@ -16,17 +19,21 @@ export default function Home() {
               <span className="text-accent">Ridho Hidayat</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              aperiam ea mollitia incidunt quas labore aut temporibus, quod
-              ullam nulla!
+              I’m a fullstack software developer with expertise in building both
+              web and mobile applications. I specialize in using JavaScript to
+              create seamless, dynamic, and responsive experiences across both
+              platforms.
             </p>
             <div className="flex xl:flex-row flex-col items-center gap-6">
-              <Button  variant="outline" className=" rounded-full">
+              <Button variant="outline" className=" rounded-full">
                 <span>Download CV</span>
-                <FiDownload/>
+                <FiDownload />
               </Button>
 
-              <Social containerStyle="flex gap-5 justify-center" iconStyle="w-8 h-8 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"/>
+              <Social
+                containerStyle="flex gap-5 justify-center"
+                iconStyle="w-8 h-8 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+              />
             </div>
           </div>
 
@@ -34,6 +41,9 @@ export default function Home() {
             <Photo />
           </div>
         </div>
+        <About />
+        <Skill />
+        <Project />
       </div>
     </section>
   );

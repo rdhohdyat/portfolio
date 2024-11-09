@@ -1,9 +1,5 @@
-import React from 'react'
-
 const Work = () => {
-  return (
-    <div>Work</div>
-  )
+  return <section className="container mx-auto pt-16">Work</section>;
 }
 
 export default Work
