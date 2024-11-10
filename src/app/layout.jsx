@@ -2,7 +2,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 import Header from "@/components/Header";
-import Footer from "@/components/Footer"
+import Footer from "@/components/Footer";
+import PageTransition from "@/components/PageTransition";
+import StairTransition from "@/components/StairTransition";
 
 
 export const metadata = {
@@ -15,8 +17,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={` antialiased no-scroll-bar`}>
         <Header />
-        {children}
-        <Footer/>
+        <PageTransition>{children}</PageTransition>
+        <StairTransition/>
+        <Footer />
       </body>
     </html>
   );

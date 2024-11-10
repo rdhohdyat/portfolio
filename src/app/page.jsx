@@ -6,11 +6,12 @@ import Social from "@/components/Social";
 import About from "./home/About";
 import Skill from "./home/Skill";
 import Project from "./home/Project";
+import Stats from "@/components/Stats";
 
 export default function Home() {
   return (
     <section className="h-full">
-      <div className="container mx-auto h-full">
+      <div className="container mx-auto h-full mb-5 xl:mb-0">
         <div className="flex flex-col xl:flex-row items-center justify-between pt-16 xl:pb-24">
           <div className="text-center mt-5 sm:mt-0 xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
@@ -21,8 +22,7 @@ export default function Home() {
             <p className="max-w-[500px] mb-9 text-white/80">
               I’m a fullstack software developer with expertise in building both
               web and mobile applications. I specialize in using JavaScript to
-              create seamless, dynamic, and responsive experiences across both
-              platforms.
+              create platforms.
             </p>
             <div className="flex xl:flex-row flex-col items-center gap-6">
               <Button variant="outline" className=" rounded-full">
@@ -41,10 +41,8 @@ export default function Home() {
             <Photo />
           </div>
         </div>
-        <About />
-        <Skill />
-        <Project />
       </div>
+      <Stats />
     </section>
   );
 }
