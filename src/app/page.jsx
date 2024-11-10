@@ -7,6 +7,8 @@ import About from "./home/About";
 import Skill from "./home/Skill";
 import Project from "./home/Project";
 import Stats from "@/components/Stats";
+import Contact from "./home/Contact";
+import Experience from "./home/Experience";
 
 export default function Home() {
   
@@ -45,7 +47,9 @@ export default function Home() {
       <Stats />
       <About />
       <Skill/>
+      <Experience/>
       <Project/>
+      <Contact/>
     </section>
   );
 }

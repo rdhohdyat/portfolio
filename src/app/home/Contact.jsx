@@ -20,7 +20,7 @@ const Contact = () => {
             type="text"
             id="name"
             placeholder="Your Name"
-            className="p-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            className="p-4 rounded-lg bg-white/5 text-white focus:outline-none focus:ring-2 focus:ring-accent"
             required
           />
         </div>
@@ -33,7 +33,7 @@ const Contact = () => {
             type="email"
             id="email"
             placeholder="Your Email"
-            className="p-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            className="p-4 rounded-lg bg-white/5 text-white focus:outline-none focus:ring-2 focus:ring-accent"
             required
           />
         </div>
@@ -46,7 +46,7 @@ const Contact = () => {
             type="text"
             id="subject"
             placeholder="Subject"
-            className="p-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            className="p-4 rounded-lg bg-white/5 text-white focus:outline-none focus:ring-2 focus:ring-accent"
           />
         </div>
 
@@ -58,14 +58,14 @@ const Contact = () => {
             id="message"
             rows="6"
             placeholder="Your Message"
-            className="p-4 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            className="p-4 rounded-lg bg-white/5 text-white focus:outline-none focus:ring-2 focus:ring-accent"
             required
           ></textarea>
         </div>
 
         <button
           type="submit"
-          className="w-full py-3 px-6 mt-4 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition duration-300"
+          className="w-full py-3 px-6 mt-4 bg-accent text-primary font-semibold rounded-lg hover:bg-accent-hover transition duration-300"
         >
           Send Message
         </button>
@@ -76,10 +76,10 @@ const Contact = () => {
         <p className="text-lg">
           Or you can reach me directly at:
           <a
-            href="mailto:youremail@example.com"
-            className="text-cyan-400 hover:underline ml-1"
+            href="mailto:rdho.hdyat@gmail.com"
+            className="text-accent hover:underline ml-1"
           >
-            youremail@example.com
+            rdho.hdyat@gmail.com
           </a>
         </p>
       </div>
