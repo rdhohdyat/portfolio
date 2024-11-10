@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary pt-20 text-white py-6">
       <div className="container mx-auto text-center">
-        <p className="text-sm">
+        <p className="text-white/80">
           &copy; {new Date().getFullYear()} Ridho Hidayat. All rights reserved.
         </p>
         <div className="mt-4">

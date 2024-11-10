@@ -103,7 +103,7 @@ const Skill = () => {
         </div>
 
         {/* Next.js */}
-        <div className="flex flex-col items-center text-white hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] transition duration-300">
+        <div className="flex flex-col items-center text-white hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,255)] transition duration-300">
           <SiNextdotjs size={40} className="text-black mb-4" />
           <span>Next.js</span>
         </div>
