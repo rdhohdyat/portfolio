@@ -26,7 +26,7 @@ const Skill = () => {
       </h1>
 
       {/* Skill Description */}
-      <p className="text-lg text-center mb-12 text-white max-w-2xl">
+      <p className="sm:text-lg text-center mb-12 text-white max-w-2xl">
         I am passionate about building web applications using a wide range of
         technologies. Below are some of the programming languages and tools I
         have worked with and gained experience in. I continuously learn and

@@ -57,7 +57,7 @@ const About = () => {
         }}
       >
         <motion.p
-          className="text-lg mb-4"
+          className="sm:text-lg mb-4"
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
@@ -70,7 +70,7 @@ const About = () => {
           applications and exploring new technologies.
         </motion.p>
         <motion.p
-          className="text-lg mb-4"
+          className="sm:text-lg mb-4"
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
@@ -83,7 +83,7 @@ const About = () => {
           that are both functional and user-friendly.
         </motion.p>
         <motion.p
-          className="text-lg"
+          className="sm:text-lg"
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,

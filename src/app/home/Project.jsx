@@ -34,7 +34,7 @@ const Project = () => {
       </h1>
 
       {/* Project Description */}
-      <p className="text-lg text-center mb-12 text-white max-w-2xl">
+      <p className="sm:text-lg text-center mb-12 text-white max-w-2xl">
         Here are some of the recent projects I've worked on. These projects
         showcase my skills in building web applications, from frontend to
         backend. Feel free to explore them to learn more about my work.
