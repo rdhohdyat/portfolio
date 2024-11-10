@@ -9,6 +9,7 @@ import Project from "./home/Project";
 import Stats from "@/components/Stats";
 
 export default function Home() {
+  
   return (
     <section className="h-full pt-28">
       <div className="container mx-auto h-full">
@@ -20,9 +21,8 @@ export default function Home() {
               <span className="text-accent">Ridho Hidayat</span>
             </h1>
             <p className="max-w-[500px] mb-8 text-white/80">
-              I’m a fullstack software developer with expertise in building both
-              web and mobile applications. I specialize in using JavaScript to
-              create platforms.
+              Welcome to my Website, Discover more about what I do and how I can
+              help you.
             </p>
             <div className="flex xl:flex-row flex-col items-center gap-6">
               <Button variant="outline" className=" rounded-full">
@@ -43,7 +43,9 @@ export default function Home() {
         </div>
       </div>
       <Stats />
-      <About/>
+      <About />
+      <Skill/>
+      <Project/>
     </section>
   );
 }
