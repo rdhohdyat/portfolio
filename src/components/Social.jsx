@@ -23,6 +23,7 @@ const Social = ({ containerStyle, iconStyle }) => {
           className={iconStyle}
         >
           {social.icon}
+          
         </Link> 
       ))}
     </div>

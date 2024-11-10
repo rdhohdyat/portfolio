@@ -20,10 +20,10 @@ const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger>
-        <CiMenuFries className="text-accent text-xl font-bold" />
+        <CiMenuFries className="text-accent text-2xl font-bold" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        <div className="text-2xl mt-32 mb-32 text-center">
+        <div className="text-2xl mt-28 mb-28 text-center">
           <Link href="/">
             <h1 className="text-4xl font-semibold">
               Ridho<span className="text-accent">.</span>
