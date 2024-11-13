@@ -5,38 +5,11 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const About = () => {
-  const [inView, setInView] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        if (entry.isIntersecting) {
-          setInView(true);
-        } else {
-          setInView(false);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    const element = document.getElementById("about-section");
-    if (element) {
-      observer.observe(element);
-    }
-
-    // Cleanup observer when component unmounts
-    return () => {
-      if (element) {
-        observer.unobserve(element);
-      }
-    };
-  }, []); // Empty dependency array ensures it only runs once when the component mounts
 
   return (
     <div
       id="about-section"
-      className="flex flex-col justify-center items-center text-white px-6 py-12"
+      className="flex flex-col justify-center items-center text-white px-6 pt-28"
     >
       <motion.h1
         className="text-4xl font-bold mb-6 text-center"

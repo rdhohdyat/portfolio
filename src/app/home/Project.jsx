@@ -3,6 +3,7 @@
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
+import ProjectCard from "@/components/ProjectCard";
 
 const Project = () => {
   const projects = [
@@ -43,23 +44,12 @@ const Project = () => {
       {/* Project Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white/5 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            <h2 className="text-2xl font-semibold text-white mb-4">
-              {project.title}
-            </h2>
-            <p className="text-white/80 mb-4">{project.description}</p>
-            <a
-              href={project.link}
-              className="text-accent hover:text-accent-hover"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Project
-            </a>
-          </div>
+          <ProjectCard
+            index={index}
+            title={project.title}
+            description={project.description}
+            link={project.link}
+          />
         ))}
       </div>
 

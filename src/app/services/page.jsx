@@ -85,7 +85,7 @@ const projectPrices = [
     ],
   },
 ];
-
+ 
 const Services = () => {
   return (
     <section className="min-h-[80vh]  flex flex-col justify-center items-center pb-12 pt-28">

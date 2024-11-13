@@ -9,6 +9,7 @@ import Project from "./home/Project";
 import Stats from "@/components/Stats";
 import Contact from "./home/Contact";
 import Experience from "./home/Experience";
+import Contribution from "@/components/Contribution";
 
 export default function Home() {
   
@@ -47,6 +48,7 @@ export default function Home() {
       <Stats />
       <About />
       <Skill/>
+      <Contribution/>
       <Experience/>
       <Project/>
       <Contact/>
