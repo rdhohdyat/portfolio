@@ -14,14 +14,13 @@ import MobileNav from "./MobileNav";
 const links = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
-  { name: "Work", path: "/work" },
 ];
 
 const Nav = () => {
   const pathname = usePathname();
   return (
     <nav className="">
-      <div className="hidden xl:flex gap-8">
+      <div className="hidden gap-8 xl:flex">
         {links.map((link) => (
           <Link
             key={link.name}

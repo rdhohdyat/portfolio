@@ -1,3 +1,5 @@
+"use client"
+
 import { FiDownload } from "react-icons/fi";
 
 import { Button } from "@/components/ui/button";
@@ -12,14 +14,21 @@ import Experience from "./home/Experience";
 import Contribution from "@/components/Contribution";
 
 export default function Home() {
+   const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/cv.pdf";
+    link.download = "cv.pdf";
+    link.click();
+  };
+
   
   return (
     <section className="h-full pt-28">
-      <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pb-28">
-          <div className="text-center mt-5 xl:mt-0 xl:text-left order-2 xl:order-none">
+      <div className="container h-full mx-auto">
+        <div className="flex flex-col items-center justify-between xl:flex-row xl:pb-28">
+          <div className="order-2 mt-5 text-center xl:mt-0 xl:text-left xl:order-none">
             <span className="text-xl">Software Developer</span>
-            <h1 className="h1 mb-6">
+            <h1 className="mb-6 h1">
               Hello I'm <br />{" "}
               <span className="text-accent">Ridho Hidayat</span>
             </h1>
@@ -27,8 +36,8 @@ export default function Home() {
               Welcome to my Website, Discover more about what I do and how I can
               help you.
             </p>
-            <div className="flex xl:flex-row flex-col items-center gap-6">
-              <Button variant="outline" className=" rounded-full">
+            <div className="flex flex-col items-center gap-6 xl:flex-row">
+              <Button onClick={handleDownload} variant="outline" className="rounded-full ">
                 <span>Download CV</span>
                 <FiDownload />
               </Button>

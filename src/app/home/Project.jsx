@@ -8,41 +8,65 @@ import ProjectCard from "@/components/ProjectCard";
 const Project = () => {
   const projects = [
     {
-      title: "Project 1: E-Commerce Website",
+      title: "Project 1: EBR UNITED PROFILE & EVENT MANAGEMENT",
       description:
-        "A full-stack e-commerce platform built using React, Node.js, and MongoDB server client arsitektur.",
-      link: "https://example.com/project1",
+        "A company profile and event management platform for EBR United, built with modern web technologies to manage events, schedules, and online presence effectively.",
+      link: "https://ebr-united.id/",
     },
     {
-      title: "Project 2: Portfolio Website",
+      title: "Project 2: E-Commerce Percetakan",
       description:
-        "A personal portfolio website showcasing my skills and projects, built with Next.js and Tailwind CSS.",
+        "An online printing service application that allows customers to order, customize, and track printing products with an integrated checkout and admin dashboard.",
       link: "https://example.com/project2",
     },
     {
-      title: "Project 3: Blogging Platform",
+      title: "Project 3: Rumah Sakit",
       description:
-        "A blogging platform that allows users to create and share posts, built with Laravel and Vue.js.",
+        "A hospital information system designed to manage patients, doctors, and medical records with features for scheduling, registration, and administration.",
       link: "https://example.com/project3",
     },
+    {
+      title: "Project 4: Website Inventaris Administrasi Kampus",
+      description:
+        "A campus inventory and administration management system for tracking assets, handling requests, and improving operational efficiency.",
+      link: "https://example.com/project4",
+    },
+    {
+      title: "Project 5: Pasar Tradisional Online",
+      description:
+        "An online marketplace that brings traditional market sellers closer to buyers, enabling digital transactions and delivery services.",
+      link: "https://example.com/project5",
+    },
+    {
+      title: "Project 6: Caffe Mobile POS SALE",
+      description:
+        "A mobile Point of Sale (POS) system for cafés to manage sales, menus, transactions, and reports directly from smartphones or tablets.",
+      link: "https://example.com/project6",
+    },
+    {
+      title: "Project 7: Deep Learning SmokeDetect",
+      description:
+        "An AI-powered smoke detection system using deep learning models to identify smoke from images and video feeds for early fire prevention.",
+      link: "https://example.com/project7",
+    },
   ];
-
+  
   return (
-    <div className="pt-24 flex flex-col justify-center items-center px-4">
+    <div className="flex flex-col items-center justify-center px-4 pt-24">
       {/* Section Title */}
-      <h1 className="text-4xl font-bold text-center mb-6 text-white">
+      <h1 className="mb-6 text-4xl font-bold text-center text-white">
         My Recent Projects
       </h1>
 
       {/* Project Description */}
-      <p className="sm:text-lg text-center mb-12 text-white max-w-2xl">
+      <p className="max-w-2xl mb-12 text-center text-white sm:text-lg">
         Here are some of the recent projects I've worked on. These projects
         showcase my skills in building web applications, from frontend to
         backend. Feel free to explore them to learn more about my work.
       </p>
 
       {/* Project Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div className="grid max-w-5xl grid-cols-1 gap-8 mx-auto sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <ProjectCard
             index={index}

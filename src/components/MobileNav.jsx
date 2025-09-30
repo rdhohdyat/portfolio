@@ -10,8 +10,6 @@ import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 const links = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
-  { name: "Work", path: "/work" },
-  { name: "Contact", path: "/contact" },
 ];
 
 const MobileNav = () => {
@@ -19,17 +17,17 @@ const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger>
-        <CiMenuFries className="text-accent text-2xl font-bold" />
+        <CiMenuFries className="text-2xl font-bold text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        <div className="text-2xl mt-14 mb-14 text-center">
+        <div className="text-2xl text-center mt-14 mb-14">
           <Link href="/">
             <h1 className="text-4xl font-semibold">
               Ridho<span className="text-accent">.</span>
             </h1>
           </Link>
         </div>
-        <nav className="flex flex-col justify-center items-center gap-8">
+        <nav className="flex flex-col items-center justify-center gap-8">
           {links.map((link) => (
             <Link
               key={link.name}
