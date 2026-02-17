@@ -12,7 +12,7 @@ const Contribution = () => {
   };
 
   return (
-    <div className="container bg-primary pt-12 px-4 sm:px-8 lg:px-16">
+    <div className="hidden sm:block container bg-primary pt-12 px-4 sm:px-8 lg:px-16">
       <div className="flex flex-col justify-center items-center gap-6">
         <h1 className="text-2xl sm:text-4xl font-semibold text-white text-center">
           My Github Contribution
